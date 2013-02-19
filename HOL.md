@@ -32,8 +32,11 @@ The lab will use PowerShell commands to upload the vhd-file.
 You will _upload_ a vhd-file from DC01 to the storage account in Azure.
 
 1. Log on to the DC01 with the credentials:
- - User name: **Contoso\Administrator**
- - Password: **Passw0rd!**
+
+	| Field | Value |
+	|--------|--------|
+	| User name | **Contoso\Administrator** |
+	| Password | **Passw0rd!** |
 
 	![Log on using your credentials.](./images/Enter-Your-Credentials.png?raw=true "Log on using your credentials.")
 
