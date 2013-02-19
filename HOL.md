@@ -9,7 +9,7 @@ In this lab, you will upload an existing Hyper-V vhd-file from your **DC01** VM 
 
 After the upload, the vhd-file can be used to create a new virtual machine in Windows Azure, or can be added as a data disk to an existing Azure virtual machine.
 
-> Note: In this lab, in order to avoid a dependency on the bandwidth between any on-premise location and the Azure datacenters, we have copied vhd files in the previous lab and created a new VM from those files called DC01 running on Azure.  Although DC01 is not truly on-premise, you would perform the exact same steps to manually upload a real on-premise VM.
+> **Note**: In this lab, in order to avoid a dependency on the bandwidth between any on-premise location and the Azure datacenters, we have copied vhd files in the previous lab and created a new VM from those files called DC01 running on Azure.  Although DC01 is not truly on-premise, you would perform the exact same steps to manually upload a real on-premise VM.
 
 The lab will use PowerShell commands to upload the vhd-file.
 
@@ -28,7 +28,7 @@ The lab will use PowerShell commands to upload the vhd-file.
 
 	![Connecting to the Virtual Machine](images/Do-You-Want-To-Save-This-file-dialog.png?raw=true "Connecting to the Virtual Machine")
 
-	>Note: For the purpose of this lab, the DC01 represents the on-premise environment. You will _upload_ a vhd-file from DC01 to the storage account in Azure.
+	>**Note**: For the purpose of this lab, the DC01 represents the on-premise environment. You will _upload_ a vhd-file from DC01 to the storage account in Azure.
 
 1. Log on to the DC01 with the credentials:
 
