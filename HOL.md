@@ -87,7 +87,7 @@ Close the browser window.
 	Get-AzureSubscription
 	````
 
-	![Displaying Subscription Information](./images/Displaying-Subscription-Information.png?raw=true "Displaying Subscription Information")
+	![Displaying Subscription Information](./images/displaying-subscription-information.png?raw=true "Displaying Subscription Information")
 
 1. To set the default subscription and storage account. You need to replace NNNN by the unique number you selected earlier. The Azure PowerShell command for uploading a vhd-file requires a storage account. In the PowerShell window, run
 
