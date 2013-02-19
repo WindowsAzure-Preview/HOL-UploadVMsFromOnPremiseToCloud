@@ -104,7 +104,7 @@ Get-AzureSubscription
 
 	> **Note:** The folder contains as sample Hyper-V vhd-file named **itcamp-vhdfile.vhd**. The current size of the vhd-file is **800 MB**. You will upload this vhd-file to Windows Azure storage.
 
-1. In the C:\Files folder, right-click itcamp-vhdfile.vhd, and click **Mount**. _After a few moments, the vhd-file will be mounted as drive F:_.
+1. In the C:\Files folder, right-click itcamp-vhdfile.vhd, and click **Mount**. After a few moments, the vhd-file will be mounted as drive F:.
 
 	![Mounting-VHD-Image](images/Mounting-VHD-Image.png?raw=true "Mounting VHD Image")
 
