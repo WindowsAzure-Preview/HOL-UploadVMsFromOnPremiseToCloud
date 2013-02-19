@@ -9,7 +9,7 @@ In this lab, you will upload an existing Hyper-V vhd-file from your **DC01** VM 
 
 After the upload, the vhd-file can be used to create a new virtual machine in Windows Azure, or can be added as a data disk to an existing Azure virtual machine.
 
->Note: In this lab, in order to avoid a dependency on the bandwidth between any on-premise location and the Azure datacenters, we have copied vhd files in the previous lab and created a new VM from those files called DC01 running on Azure.  Although DC01 is not truly on-premise, you would perform the exact same steps to manually upload a real on-premise VM.
+>**Note:** In this lab, in order to avoid a dependency on the bandwidth between any on-premise location and the Azure datacenters, we have copied vhd files in the previous lab and created a new VM from those files called DC01 running on Azure.  Although DC01 is not truly on-premise, you would perform the exact same steps to manually upload a real on-premise VM.
 
 The lab will use PowerShell commands to upload the vhd-file.
 
@@ -28,7 +28,7 @@ The lab will use PowerShell commands to upload the vhd-file.
 
 	![Connecting to the Virtual Machine](images/Do-You-Want-To-Save-This-file-dialog.png?raw=true "Connecting to the Virtual Machine")
 
-	>Note: For the purpose of this lab, the DC01 represents the on-premise environment.
+	>**Note:** For the purpose of this lab, the DC01 represents the on-premise environment.
 You will _upload_ a vhd-file from DC01 to the storage account in Azure.
 
 1. Log on to the DC01 with the credentials:
@@ -107,12 +107,12 @@ Get-AzureSubscription
 
 	![Locating-VHD-Image-On-Disk](images/Locating-VHD-Image-On-Disk.png?raw=true "Locating VHD Image On Disk")
 
-	>The folder contains as sample Hyper-V vhd-file named **itcamp-vhdfile.vhd**.
+	>**Note:** The folder contains as sample Hyper-V vhd-file named **itcamp-vhdfile.vhd**.
 The current size of the vhd-file is **800 MB**.
 You will upload this vhd-file to Windows Azure storage.
 
 1. In the C:\Files folder, right-click itcamp-vhdfile.vhd, and click **Mount**.
-_After a few moments, the vhd-file will be mounted as drive F:.
+After a few moments, the vhd-file will be mounted as drive F:.
 
 	![Mounting-VHD-Image](images/Mounting-VHD-Image.png?raw=true "Mounting VHD Image")
 
@@ -120,7 +120,7 @@ _After a few moments, the vhd-file will be mounted as drive F:.
 
 	![Mounted-VHD-Image](images/Mounted-VHD-Image.png?raw=true "Mounted VHD Image")
 
-	>Notice that the F: drive has a capacity of 3.99 GB.
+	>**Note:** Notice that the F: drive has a capacity of 3.99 GB.
 The vhd-file is of dynamically-expanding type, with a maximum capacity of 4 GB.
 
 1. Right-click **Local Disk (F:)**, and then click **Eject**.
@@ -141,7 +141,7 @@ The vhd-file is of dynamically-expanding type, with a maximum capacity of 4 GB.
 		-Destination "http://itcampNNNN.blob.core.windows.net/itcamp/itcamp-vhdfile.vhd"
 	````
 
-	>The command calculates a hash of the file contents, creates the blob container (itcamp) if it does not exist yet, and then uploads the file to the storage account. The PowerShell cmdlet also converts the dynamically expanding vhd-file to a fixed size file.
+	>**Note:** The command calculates a hash of the file contents, creates the blob container (itcamp) if it does not exist yet, and then uploads the file to the storage account. The PowerShell cmdlet also converts the dynamically expanding vhd-file to a fixed size file.
 
 	> After a few moments, a new 4 GB fixed-size vhd-file is available in the storage account.
 	
