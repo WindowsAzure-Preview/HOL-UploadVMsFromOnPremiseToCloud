@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Lab xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/ContentFramework.Core.Models">
+  <Id>UploadVMsFromOnPremiseToCloud</Id>
+  <Author>
+    <Blog></Blog>
+    <Email></Email>
+    <Name></Name>
+  </Author>
+	<Description>In this lab, you will upload an existing Hyper-V vhd-file from your DC01 VM to Windows Azure. In this case, DC01 represents the "on-premise" location. After the upload, the vhd-file can be used to create a new virtual machine in Windows Azure, or can be added as a data disk to an existing Azure virtual machine.
+	</Description>  
+	<Document ConversionType="Html">.\HOL.md</Document>
+	<Title>Upload VMs from On-Premise to Cloud</Title>
+	<Version>1.0.0</Version>
+	<Source></Source>
+	<DependencyChecker></DependencyChecker>
+	<CustomProperties>
+		<Property Name="GitHubRepository" Value="https://github.com/WindowsAzure-TrainingKit/HOL-UploadVMsFromOnPremiseToCloud" />
+	</CustomProperties>   
+</Lab>
