@@ -1,4 +1,4 @@
-﻿Copyright 2012 Microsoft
+﻿Copyright 2013 Microsoft
 
 The **Upload VMs from On-Premise to Cloud Hands-On Lab** is licensed under the terms of the Apache License, Version 2.0.
 You may use it according to the license as is most appropriate for your project on a case-by-case basis.
