@@ -1,15 +1,15 @@
-﻿<a name="Title" />
+<a name="Title" />
 # Upload VMs from On-Premise to Cloud #
 
 ---
 <a name="Overview" />
 ## Overview ##
 
-In this lab, you will upload an existing Hyper-V vhd-file from your **DC01** VM to Windows Azure. In this case, **DC01** represents the "on-premise" location.
+In this lab, you will upload an existing Hyper-V vhd-file from the **DC01** VM you created in the "Getting Started with VMs" HOL to Windows Azure. In this case, **DC01** represents the "on-premise" location.
 
 After the upload, the vhd-file can be used to create a new virtual machine in Windows Azure, or can be added as a data disk to an existing Azure virtual machine.
 
-> **Note**: In this lab, in order to avoid a dependency on the bandwidth between any on-premise location and the Azure datacenters, we have copied vhd files in the previous lab and created a new VM from those files called DC01 running on Azure.  Although DC01 is not truly on-premise, you would perform the exact same steps to manually upload a real on-premise VM.
+> **Note**: In this lab, in order to avoid a dependency on the bandwidth between any on-premise location and the Azure datacenters, we have copied a data vhd file to a central account for copy.  Although DC01 is not truly on-premise, you would perform the exact same steps to manually upload a real on-premise VM.
 
 The lab will use PowerShell commands to upload the vhd-file.
 
